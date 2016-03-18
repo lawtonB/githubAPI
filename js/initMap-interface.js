@@ -1,5 +1,6 @@
 var apiKey = require('./../.env').apiKey;
-var converter = require('./../js/temperatureConverter-interface.js').converter;
+
+// var converter = require('./../js/temperatureConverter-interface.js').converter;
 
 exports.initMap = function(position) {
    var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);

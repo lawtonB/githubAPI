@@ -27,7 +27,7 @@ gulp.task('serve', function(){
   browserSync.init({
     server: {
       baseDir: './',
-      index: 'map.html'
+      index: 'github.html'
     }
   });
   gulp.watch(['js/*.js'], ['jsBuild']);
