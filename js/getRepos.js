@@ -16,7 +16,7 @@ exports.getRepos = function(user){
     console.log(error.responseJSON.message);
   });
 
-  $.get('https://api.github.com/users/' + user + "?access_token=" + apiKey).then(function(response){
+  $.get('https://api.github.com/users/' + user + "/repos?access_token" + apiKey).then(function(response){
     userRepo(response);
     // console.log(gitHubUser);
     // console.log(gitHubUser.email);
