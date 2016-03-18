@@ -2,15 +2,13 @@
 //
 // apiKey = "f73a42fce5f2b99f6d20b15a90b0011bb3ec40b7";
 
-var getRepos = require('./../js/github-interface.js').getRepos;
+var getRepos = require('./../js/getRepos.js').getRepos;
 
 $(document).ready(function() {
-  $("#getUser").click(function(){
-
-    var user = $("#userName").val();
-    $(".showUser").text("the users name is " + user + ".");
-    getRepos();
-    console.log(response);
+  $("#submitButton").click(function(){
+    getRepos($("#userNameInput").val());
+  });
+});
 
 
 
@@ -19,5 +17,3 @@ $(document).ready(function() {
     // }).fail(function(error){
     //   console.log(error.responseJSON.message);
     // });
-  });
-});
