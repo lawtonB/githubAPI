@@ -1,10 +1,7 @@
 # githubAPI
 
 Github API is a site that allows the user to enter the name of a Github user and see basic information about them including 
-number of repos
-who they are following
-who is following them
-and a list of projects they have worked on
+number of repos, who they are following, who is following them and a list of projects they have worked on.
 
 To use this site you will need to a github API key and create a file called ".env" in the top level of the directory, with this:
 
